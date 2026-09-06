@@ -1,0 +1,106 @@
+.footer {
+    width: 100%;
+    background-color: #fff;
+    color: #111;
+}
+
+/* Main footer */
+
+.footerContent {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 100px;
+
+    padding: 25px 0 50px;
+}
+
+
+/* Footer columns */
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footerColumn h3 {
+    margin: 0;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footerLine {
+    width: 35px;
+    height: 1px;
+
+    background-color: #999;
+
+    margin: 10px 0 20px;
+}
+
+.footerColumn a {
+    margin-bottom: 20px;
+
+    color: #666;
+    text-decoration: none;
+
+    font-size: 18px;
+}
+
+.footerColumn a:hover {
+    color: #111;
+}
+
+
+/* Logo section */
+
+.footerLogoSection {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerDivider {
+    width: 100%;
+    height: 1px;
+
+    background-color: #222;
+}
+
+.footerLogo {
+    width: 105px;
+    height: auto;
+
+    margin-top: 26px;
+    margin-bottom: 40px;
+}
+
+
+/* Bottom copyright */
+
+.footerBottom {
+    width: 100%;
+
+    background-color: #f3f3f3;
+
+    text-align: center;
+
+    padding: 25px 0;
+}
+
+.footerBottom p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}

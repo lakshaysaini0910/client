@@ -1,0 +1,41 @@
+.celebritySpotlight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.celebrityImage {
+    overflow: hidden;
+}
+
+.celebrityImage img {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    display: block;
+    animation: celebrityFade 0.8s ease;
+}
+
+.celebrityInfo {
+    text-align: center;
+}
+
+.celebrityInfo h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+
+
+@keyframes celebrityFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
