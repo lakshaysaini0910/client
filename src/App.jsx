@@ -74,7 +74,19 @@ function App() {
 
 
       <div className="Home_Hero">
-        <img src="https://www.charactr.in/cdn/shop/files/Website_Banner_Desktop.png?v=1784799743&width=2400" alt="Home Hero" />
+        <picture>
+
+          <source
+            media="(max-width: 768px)"
+            srcSet="https://www.charactr.in/cdn/shop/files/Website_banner_2.png?v=1784703870&width=1100"
+          />
+
+          <img
+            src="https://www.charactr.in/cdn/shop/files/Website_Banner_Desktop.png?v=1784799743&width=2400"
+            alt="Home Hero"
+          />
+
+        </picture>
       </div>
 
 
