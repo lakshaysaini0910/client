@@ -1,8 +1,7 @@
 .shopCategory {
     display: flex;
     flex-direction: column;
-    gap: px;
-    padding: 0px 50px;
+    padding: 10px 50px;
 }
 
 .block {
@@ -15,7 +14,7 @@
 .categoryList {
     width: 45%;
     gap: 5px;
-    padding: 0 ;
+    padding: 0;
     margin: 0;
 }
 
@@ -82,4 +81,110 @@
 
     color: white;
     font-size: 28px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .mobileCategorySlider {
+        display: none;
+    }
+
+    .shopCategory {
+        padding: 10px 25px;
+    }
+
+    .block {
+        gap: 25px;
+    }
+
+    .categoryList,
+    .categoryImage {
+        width: 50%;
+    }
+
+    .categoryHeader h2 {
+        font-size: 24px;
+    }
+
+    .categoryItem {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+
+    .categoryImage {
+        height: 400px;
+    }
+}
+
+.mobileCategorySlider{
+    display: none;
+} 
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .shopCategory {
+        padding: 10px 0;
+        overflow: hidden;
+    }
+
+    .categoryHeader {
+        padding: 0 15px;
+        margin-bottom: 10px;
+    }
+
+    .categoryHeader h2 {
+        font-size: 20px;
+    }
+
+    .categoryHeader span {
+        font-size: 14px;
+    }
+
+    /* Hide desktop/tablet layout */
+    .block {
+        display: none;
+    }
+
+    /* Show phone slider */
+    .mobileCategorySlider {
+        display: flex;
+        gap: 5px;
+        overflow-x: auto;
+        padding: 0 15px;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        margin: 0 15px 0 15px;
+        border-radius: 8px;
+    }
+    
+    .mobileCategorySlider::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .mobileCategoryCard {
+        position: relative;
+        flex: 0 0 210px;
+        height: 333px;
+        overflow: hidden;
+        border-radius: 8px;
+        scroll-snap-align: start;
+    }
+
+    .mobileCategoryCard img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .mobileCategoryCard h2 {
+        position: absolute;
+        left: 10px;
+        bottom: 12px;
+        margin: 0;
+        color: white;
+        font-size: 20px;
+    }
 }

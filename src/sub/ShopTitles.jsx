@@ -45,10 +45,10 @@ function ShopTitles() {
             </div>
 
 
+            {/* DESKTOP / TABLET LAYOUT */}
             <div className="block">
 
                 <div className="categoryList">
-
 
                     {categories.map((category, index) => (
                         <div
@@ -58,6 +58,7 @@ function ShopTitles() {
                             onMouseEnter={() => setActiveCategory(index)}
                         >
                             <span>{category.name}</span>
+
                             <span className="categoryArrow">
                                 <svg
                                     width="20"
@@ -69,10 +70,19 @@ function ShopTitles() {
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                 >
-                                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                    <line
+                                        x1="7"
+                                        y1="17"
+                                        x2="17"
+                                        y2="7"
+                                    ></line>
+
+                                    <polyline
+                                        points="7 7 17 7 17 17"
+                                    ></polyline>
                                 </svg>
                             </span>
+
                         </div>
                     ))}
 
@@ -86,9 +96,37 @@ function ShopTitles() {
                         alt={categories[activeCategory].name}
                     />
 
-                    <h2>{categories[activeCategory].name}</h2>
+                    <h2>
+                        {categories[activeCategory].name}
+                    </h2>
 
                 </div>
+
+            </div>
+
+
+            {/* MOBILE LAYOUT */}
+            <div className="mobileCategorySlider">
+
+                {categories.map((category) => (
+
+                    <div
+                        className="mobileCategoryCard"
+                        key={category.name}
+                    >
+
+                        <img
+                            src={category.image}
+                            alt={category.name}
+                        />
+
+                        <h2>
+                            {category.name}
+                        </h2>
+
+                    </div>
+
+                ))}
 
             </div>
 

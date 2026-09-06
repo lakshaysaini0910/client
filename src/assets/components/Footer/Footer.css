@@ -4,6 +4,7 @@
     color: #111;
 }
 
+
 /* Main footer */
 
 .footerContent {
@@ -103,4 +104,79 @@
 
     font-size: 14px;
     letter-spacing: 1.5px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .footerContent {
+        grid-template-columns: 1fr;
+        gap: 35px;
+
+        padding: 30px 25px 40px;
+
+        text-align: center;
+    }
+
+
+    /* Center each column */
+
+    .footerColumn {
+        align-items: center;
+    }
+
+    .footerColumn h3 {
+        font-size: 18px;
+    }
+
+    .footerColumn a {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+
+    /* Small line under heading */
+
+    .footerLine {
+        width: 200px;
+        margin: 8px 0 18px;
+        background-color: black;
+    }
+
+
+    /* Logo + divider */
+
+    .footerLogoSection {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .footerDivider {
+        width: 100%;
+    }
+
+    .footerLogo {
+        width: 85px;
+
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+
+    /* Copyright */
+
+    .footerBottom {
+        padding: 20px 15px;
+    }
+
+    .footerBottom p {
+        font-size: 11px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
 }
